@@ -1,0 +1,73 @@
+<!-- Extensie tijdelijk laden in Firefox
+
+    Open Firefox en typ about:debugging in de adresbalk.
+
+    Klik op Deze Firefox aan de linkerkant.
+
+    Klik op Add-ons tijdelijk laden.
+
+    Selecteer het bestand manifest.json in de map van de extensie.
+
+    De extensie verschijnt nu in de Firefox-werkbalk. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <script src="popupv1.5.js" defer></script>
+    <script src="dateTimeLearning3.js" defer></script>
+    <!-- <script src="atomicklok.js" defer></script> -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="timeDisplay"></div>
+    <button id="addAgendaItemButton">Add Agenda Item</button>
+    <button id="settingsButton">Settings</button>
+    <div id="settingsPanelButton" class="settings-panel hidden">
+        <div id="output"></div>
+        <select id="timezone-select" class="timezone-select">
+            <option value="-12">UTC-12:00 - Baker Island, Howland Island</option>
+            <option value="-11">UTC-11:00 - American Samoa, Niue</option>
+            <option value="-10">UTC-10:00 - Hawaii, French Polynesia (Tahiti)</option>
+            <option value="-9">UTC-09:00 - Alaska (most), Gambier Islands</option>
+            <option value="-8">UTC-08:00 - Pacific Time (US & Canada), Clipperton Island</option>
+            <option value="-7">UTC-07:00 - Mountain Time (US & Canada), Arizona</option>
+            <option value="-6">UTC-06:00 - Central Time (US & Canada), Mexico City</option>
+            <option value="-5">UTC-05:00 - Eastern Time (US & Canada), Bogotá, Lima</option>
+            <option value="-4">UTC-04:00 - Atlantic Time (Canada), Caracas, La Paz</option>
+            <option value="-3">UTC-03:00 - Buenos Aires, São Paulo, Greenland</option>
+            <option value="-2">UTC-02:00 - Fernando de Noronha, South Georgia</option>
+            <option value="-1">UTC-01:00 - Azores, Cape Verde</option>
+            <option value="0" selected>UTC±00:00 - London, Dublin, Lisbon, Accra</option>
+            <option value="1">UTC+01:00 - Paris, Berlin, Rome, Lagos</option>
+            <option value="2">UTC+02:00 - Cairo, Johannesburg, Athens, Helsinki</option>
+            <option value="3">UTC+03:00 - Moscow, Istanbul, Riyadh, Nairobi</option>
+            <option value="3.5">UTC+03:30 - Tehran</option>
+            <option value="4">UTC+04:00 - Dubai, Baku, Yerevan, Samara</option>
+            <option value="4.5">UTC+04:30 - Kabul</option>
+            <option value="5">UTC+05:00 - Karachi, Tashkent, Yekaterinburg</option>
+            <option value="5.5">UTC+05:30 - Mumbai, New Delhi</option>
+            <option value="5.75">UTC+05:45 - Kathmandu</option>
+            <option value="6">UTC+06:00 - Dhaka, Almaty, Omsk</option>
+            <option value="6.5">UTC+06:30 - Yangon, Cocos Islands</option>
+            <option value="7">UTC+07:00 - Bangkok, Jakarta, Hanoi, Krasnoyarsk</option>
+            <option value="8">UTC+08:00 - Beijing, Singapore, Perth, Manila</option>
+            <option value="8.75">UTC+08:45 - Eucla, Australia</option>
+            <option value="9">UTC+09:00 - Tokyo, Seoul, Pyongyang, Chita</option>
+            <option value="9.5">UTC+09:30 - Adelaide, Darwin</option>
+            <option value="10">UTC+10:00 - Sydney, Melbourne, Guam, Vladivostok</option>
+            <option value="10.5">UTC+10:30 - Lord Howe Island</option>
+            <option value="11">UTC+11:00 - Solomon Islands, Magadan</option>
+            <option value="12">UTC+12:00 - Auckland, Fiji, Kamchatka</option>
+            <option value="12.75">UTC+12:45 - Chatham Islands</option>
+            <option value="13">UTC+13:00 - Samoa, Tonga, Phoenix Islands</option>
+            <option value="14">UTC+14:00 - Line Islands (Kiribati)</option>
+        </select>
+
+    </div> <!-- Properly closed the settingsPanel div -->
+    
+</body>
+</html>
